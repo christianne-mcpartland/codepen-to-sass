@@ -1,4 +1,4 @@
-* {
+body {
   margin:0;
   padding:0;
   font-family:"Helvetica Neue", Helvetica, Sans-serif;
@@ -38,7 +38,7 @@ box-sizing: border-box;
   color:#FFF;
 }
 
-#toggle {
+.toggle {
   position:absolute;
   appearance:none;
   cursor:pointer;
@@ -46,7 +46,7 @@ box-sizing: border-box;
   top:-100%;
 }
 
-#toggle + label {
+.toggle + label {
   position:absolute;
   cursor:pointer;
   padding:10px;
@@ -63,7 +63,7 @@ cursor: pointer;
   margin:20px 50px;
   transition:all 500ms ease;
 }
-#toggle + label:after {
+.toggle + label:after {
   content:"Open" 
 }
 
@@ -72,19 +72,19 @@ transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   padding:5em 3em;
 }
 
-#toggle:checked ~ .message {
+.toggle:checked ~ .message {
   top: 0;
 }
 
-#toggle:checked ~ .container {
+.toggle:checked ~ .container {
   margin-top: 250px;
 }
 
-#toggle:checked + label {
+.toggle:checked + label {
   background:#dd6149;
 }
 
-#toggle:checked + label:after {
+.toggle:checked + label:after {
   content:"Close"
 }
 
