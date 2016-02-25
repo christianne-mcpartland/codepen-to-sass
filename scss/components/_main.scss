@@ -20,7 +20,7 @@ h2 {
 }
 
 .message {
-    background:#181818;
+    background: url(../images/wood-texture.jpg);
     color:#FFF;
     position: absolute;
     top: -250px;
@@ -34,7 +34,7 @@ h2 {
 }
 
 .message h1 {
-  color:#FFF;
+  color:$yellow;
 }
 
 #toggle {
